@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <!-- Add any necessary stylesheets or external libraries here -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Invoice</h1>
+
+    <table id="invoiceTable">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price ($)</th>
+                <th>Total Cost ($)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows for purchased products will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <script>
+        // Function to extract URL parameters
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        // Function to dynamically populate the invoice table
+        function populateInvoice() {
+            const productName = getParameterByName('productName');
+            const quantity = parseInt(getParameterByName('quantity'));
+            const price = parseFloat(getParameterByName('price'));
+
+            const tableBody = document.getElementById('invoiceTable').getElementsByTagName('tbody')[0];
+            const newRow = tableBody.insertRow();
+
+            const productNameCell = newRow.insertCell(0);
+            const quantityCell = newRow.insertCell(1);
+            const priceCell = newRow.insertCell(2);
+            const totalCostCell = newRow.insertCell(3);
+
+            productNameCell.innerHTML = productName;
+            quantityCell.innerHTML = quantity;
+            priceCell.innerHTML = `$${price.toFixed(2)}`;
+            totalCostCell.innerHTML = `$${(quantity * price).toFixed(2)}`;
+        }
+
+        // Call the function to populate the invoice table when the page loads
+        window.onload = function () {
+            populateInvoice();
+        };
+    </script>
+</body>
+</html>
+    <script src="invoice.js"></script>
+
+

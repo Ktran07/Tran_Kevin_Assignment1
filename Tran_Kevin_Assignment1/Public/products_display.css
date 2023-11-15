@@ -1,0 +1,100 @@
+body {
+    cursor: none
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.custom-cursor {
+    /* ... other styles ... */
+    background-image: url('https://66.media.tumblr.com/c78ee0bb96f9feb8949b016543d4344c/tumblr_o96yf3dm4C1s13tcmo1_500.gif');
+}
+
+
+
+/* Add some basic styles for better presentation to nav bar*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: lightgreen;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-image: url('https://cdn.wallpapersafari.com/69/1/t2S3Tu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color:rgb(29, 110, 26);
+    color: rgb(197, 27, 27);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: lightgreen;
+}
+
+  /* Customized green button */
+  .purchaseButton {
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Add padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline block */
+    font-size: 16px; /* Set font size */
+    margin-top: 10px; /* Add margin to separate from the quantity input */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+.purchaseButton:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
+
+.productName {
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Set font weight */
+    color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add space below the product name */
+}
+
+.productInfo {
+    font-size: 16px; /* Set font size */
+    color: #666; /* Set text color */
+}
+
+.productPrice {
+    color: #020202; /* black color for price */
+    margin-right: 10px; /* Add space to the right of the price */
+}
+
+.productAvailability {
+    color: #555; /* Dark gray color for availability */
+}
+
+   /* Style for individual products template */
+   .product-container {
+    text-align: center;
+    margin: 20px;
+}
