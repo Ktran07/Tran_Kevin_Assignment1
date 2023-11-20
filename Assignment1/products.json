@@ -1,0 +1,26 @@
+[
+    {"name": "THE POLAR EXPRESS™ Train Ride Ticket to The North Pole [GRAND EDITION]",
+        "price": 125,
+        "image": "images/North_Pole.avif", 
+        "qty_available": 1000  },
+
+    {"name": "Bag of Nothing for Those Who Have Everything",
+		"price": 0.01,
+		"image": "images/Nothing.webp", 
+		"qty_available": 1000  },
+
+	{"name": "Christmas Bag of Something",
+		"price": 100,
+		"image": "images/Something.jpg", 
+		"qty_available": 1000  },
+
+    {"name": "Peanuts Snoopy & Woodstock Christmas Yard Decoration",
+		"price": 80,
+		"image": "images/Snoopy.jpg", 
+		"qty_available": 1000  },
+
+    {"name": "Doraemon Christmas Figure Collectible Decoration",
+		"price": 20,
+		"image": "images/Doremon.webp", 
+		"qty_available": 1000  }
+]

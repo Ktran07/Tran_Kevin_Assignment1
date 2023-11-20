@@ -1,0 +1,143 @@
+/* Features provided by ChatGPT */
+
+/* Set mouse cursor */
+body {
+    cursor: 1
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.custom-cursor {
+    background-image: url('https://i.giphy.com/media/3mqVz3vMXg4NADoH8p/200w.gif');
+}
+
+
+/* Set background image*/
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://cdn.wallpapersafari.com/69/1/t2S3Tu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Add some basic styles for better presentation to nav bar*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0;
+    background-color: lightgreen;
+    color: rgb(0, 0, 0);
+}
+
+body {
+    background-image: url('https://cdn.wallpapersafari.com/69/1/t2S3Tu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color:rgb(29, 110, 26);
+    color: rgb(197, 27, 27);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: lightgreen;
+}
+
+/* Add a Christmas-themed font to the entire document */
+
+body {
+    font-family: 'Caveat', cursive; /* You can replace 'Caveat' with any other Christmas-themed font */
+    color: #4c8c4a; /* Green color for the text */
+    
+}
+
+/* Style the Invoice heading with Christmas colors */
+h1 {
+    font-size: 36px;
+    color: #c62828; /* Red color for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* Animation */
+.THANKYOU {
+    width: 400px;
+    height: 450px;
+    background-image: url('https://i.etsystatic.com/16874044/r/il/5645bc/4155152252/il_fullxfull.4155152252_tnp6.jpg'); 
+    background-size: cover;
+    position: absolute;
+    bottom: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    transition: transform 2s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+.THANKYOU.move {
+    transform: translateX(400%); /* Adjust the distance Santa moves */
+}
+
+.Santa {
+    width: 180px;
+    height: 180px;
+    background-image: url('https://media0.giphy.com/media/ewklIJvVPbMGCo8NpZ/giphy.gif?cid=ecf05e47j7p6dzybsie9l3wmthhyo9n7m8pvf9ejo5bdlnjt&ep=v1_gifs_search&rid=giphy.gif&ct=g'); 
+    background-size: cover;
+    position: absolute;
+    bottom: 0; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    transition: transform 5s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+.Santa.move {
+    transform: translateX(70%); /* Adjust the distance Santa moves */
+}
+
+
+.catJAM{
+    width: 100px;
+    height: 100px;
+    background-image: url('https://i.giphy.com/media/MnpPaYuQbglLiutHZr/200w.gif'); 
+    background-size: cover;
+    position: absolute;
+    bottom: 300; /* Adjust as needed */
+    left: 0; /* Adjust as needed */
+    transition: transform 10s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+.catJAM.move {
+    transform: translateX(100%); /* Adjust the distance Santa moves */
+}
+
+
+
+
+
+
+
+
+
+
+
+
